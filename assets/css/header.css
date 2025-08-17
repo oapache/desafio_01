@@ -1,0 +1,260 @@
+.container {
+    width: 100%;
+    margin: 0;
+}
+
+.blue-color {
+    color: #00f2fe;
+}
+
+.main-header-box {
+    background: url('/assets/img/image 2.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    text-align: center;
+    height: 30rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.main-header-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, #4facfe, #00f2fe);
+    mix-blend-mode: overlay;
+    opacity: 0.8;
+}
+
+.main-header-box * {
+    position: relative;
+    z-index: 2;
+}
+
+.css-logo {
+    width: 80px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.main-header-box h1 {
+    font-size: 2.5rem;
+    color: #32aae1;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.main-header-box p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    line-height: 1.5;
+}
+
+.cta-button {
+    border: 3px solid #32aae1;
+    border-radius: 8px;
+    background-color: transparent;
+    color: #32aae1;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.cta-button:hover {
+    background-color: #32aae1;
+    color: white;
+    transform: translateY(-2px);
+}
+
+
+.learning {
+    border-top: 1px solid #ffffff;
+    padding: 3rem 2rem;
+    text-align: center;
+    color: white;
+    width: 100%;
+}
+
+.learning h2 {
+    font-size: 2rem;
+    color: #31a8dd;
+    margin-bottom: 2rem;
+}
+
+.learning h3 {
+    font-size: 1.25rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+    padding: 0 2rem;
+}
+
+
+.modules {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 3rem 2rem;
+    width: 100%;
+}
+
+.module-item {
+    border: 2px solid #00ffff;
+    border-radius: 2rem;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 1.5rem 2rem;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.module-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 255, 255, 0.3);
+}
+
+
+.transform-the-world {
+    border-top: 1px solid #ffffff;
+    margin: 2rem 0;
+}
+
+.transform-the-world img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.challenge-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 3rem 0;
+    position: relative;
+}
+
+.challenge-section img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.challenge-text {
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    color: #31a8dd;
+    font-weight: bold;
+    max-width: 400px;
+}
+
+
+.about-section {
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.about-text {
+    font-size: 1rem;
+    color: white;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+
+.footer {
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a2332 50%, #0d1b2a 100%);
+    padding: 3rem 0;
+    text-align: center;
+    border-top: 1px solid #ffffff;
+}
+
+.footer img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.footer p {
+    color: #ffffff;
+    font-size: 1.1rem;
+}
+
+
+@media (max-width: 768px) {
+    .main-header-box {
+        height: 25rem;
+        padding: 2rem 1rem;
+    }
+
+    .main-header-box h1 {
+        font-size: 2rem;
+    }
+
+    .challenge-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .challenge-section img {
+        width: 250px;
+    }
+
+    .challenge-text {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .learning h3 {
+        padding: 0 1rem;
+    }
+
+    .module-item {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-header-box h1 {
+        font-size: 1.8rem;
+    }
+
+    .main-header-box p {
+        font-size: 1rem;
+    }
+
+    .cta-button {
+        font-size: 1rem;
+        padding: 0.8rem 1.5rem;
+    }
+
+    .challenge-text {
+        font-size: 1.1rem;
+    }
+
+    .module-item {
+        font-size: 1rem;
+        padding: 1rem 1.5rem;
+    }
+}
